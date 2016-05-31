@@ -85,20 +85,21 @@ table {
   height: 100vh;
   background-image: url("../images/hills.jpg");
   background-size: cover;
+  background-position: bottom;
 }
-/* line 5, ../scss/components/_hero.scss */
+/* line 6, ../scss/components/_hero.scss */
 .hero .hero-cont {
   height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7e7e2+0,133131+100 */
   background: #c7e7e2;
   /* Old browsers */
-  background: -webkit-linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, #133131 80%);
+  background: -webkit-linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, rgba(19, 49, 49, 0.99) 70%, #133131 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, #133131 80%);
+  background: linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, rgba(19, 49, 49, 0.99) 70%, #133131 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/* line 14, ../scss/components/_hero.scss */
+/* line 15, ../scss/components/_hero.scss */
 .cta {
   font-size: 120px;
   font-family: "Ranga", cursive;
@@ -110,15 +111,15 @@ table {
   flex-direction: column;
   height: 100%;
 }
-/* line 25, ../scss/components/_hero.scss */
+/* line 26, ../scss/components/_hero.scss */
 .cta h2 span {
   color: #700D1F;
 }
-/* line 28, ../scss/components/_hero.scss */
+/* line 29, ../scss/components/_hero.scss */
 .cta h2:first-child {
   margin-left: -1em;
 }
-/* line 31, ../scss/components/_hero.scss */
+/* line 32, ../scss/components/_hero.scss */
 .cta h2:last-child {
   margin-left: 1em;
 }
