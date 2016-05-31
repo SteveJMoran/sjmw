@@ -1,0 +1,12 @@
+@import 'variables';
+//partials
+@import 'partials/reset';
+@import 'partials/base';
+@import 'partials/typography';
+//components
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/services';
+@import 'components/footer';
