@@ -54,28 +54,70 @@ table {
   border-spacing: 0;
 }
 
+/* line 50, ../scss/partials/_reset.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../scss/partials/_base.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 5, ../scss/partials/_base.scss */
+.spacer {
+  height: 200px;
+}
+
+/* line 8, ../scss/partials/_base.scss */
+.services-to-about {
+  background: -webkit-linear-gradient(270deg, #133131 10%, #254949 90%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(180deg, #133131 10%, #254949 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 12, ../scss/partials/_base.scss */
+.about-to-contact {
+  background: -webkit-linear-gradient(270deg, #700D1F 10%, #220B13 90%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(180deg, #700D1F 10%, #220B13 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 2, ../scss/partials/_grid.scss */
+.span-container .span4 {
+  width: 33.3333334%;
+  display: inline-block;
+}
+
 /* line 1, ../scss/components/_header.scss */
 .header {
   position: absolute;
+  width: 100%;
 }
 
 /* line 1, ../scss/components/_navigation.scss */
 .navigation {
   margin: 10px 30px;
+  text-align: right;
 }
-/* line 3, ../scss/components/_navigation.scss */
+/* line 4, ../scss/components/_navigation.scss */
 .navigation ul li {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 6, ../scss/components/_navigation.scss */
+/* line 7, ../scss/components/_navigation.scss */
 .navigation ul li a {
-  color: #D0DCD2;
-  font-family: "Helvetica", Arial, sans-serif;
+  color: #220B13;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
   text-decoration: none;
 }
-/* line 11, ../scss/components/_navigation.scss */
+/* line 12, ../scss/components/_navigation.scss */
 .navigation ul li a:hover {
   color: #fff;
 }
@@ -85,7 +127,7 @@ table {
   height: 100vh;
   background-image: url("../images/hills.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 /* line 6, ../scss/components/_hero.scss */
 .hero .hero-cont {
@@ -102,7 +144,7 @@ table {
 /* line 15, ../scss/components/_hero.scss */
 .cta {
   font-size: 120px;
-  font-family: "Ranga", cursive;
+  font-family: "Alegreya", serif;
   font-weight: bold;
   color: #FEF8F8;
   text-align: center;
@@ -127,12 +169,18 @@ table {
 /* line 1, ../scss/components/_about.scss */
 .about {
   height: 100vh;
+  background-color: #254949;
 }
 
 /* line 1, ../scss/components/_services.scss */
 .services {
   height: 100vh;
   background-color: #133131;
+}
+/* line 4, ../scss/components/_services.scss */
+.services .service {
+  height: 160px;
+  background-color: #C7E7E2;
 }
 
 /* line 1, ../scss/components/_footer.scss */
