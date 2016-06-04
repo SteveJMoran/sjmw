@@ -1,0 +1,21 @@
+.modal {
+	display: none;
+	min-width: 0;
+	height: 100vh;
+    background: $burgundy;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+
+}
+@media (min-width: 600px) {
+	.modal {
+		width: 600px;
+		height: 90vh;
+		min-width: 600px;
+	    top: 5vh;
+	}
+}

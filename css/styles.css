@@ -62,17 +62,22 @@ table {
 }
 
 /* line 1, ../scss/partials/_base.scss */
+.wrapper {
+  position: relative;
+}
+
+/* line 5, ../scss/partials/_base.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 5, ../scss/partials/_base.scss */
+/* line 9, ../scss/partials/_base.scss */
 .spacer {
   height: 200px;
 }
 
-/* line 8, ../scss/partials/_base.scss */
+/* line 12, ../scss/partials/_base.scss */
 .services-to-about {
   background: -webkit-linear-gradient(270deg, #133131 10%, #254949 90%);
   /* Chrome10-25,Safari5.1-6 */
@@ -80,7 +85,7 @@ table {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/* line 12, ../scss/partials/_base.scss */
+/* line 16, ../scss/partials/_base.scss */
 .about-to-contact {
   background: -webkit-linear-gradient(270deg, #700D1F 10%, #220B13 90%);
   /* Chrome10-25,Safari5.1-6 */
@@ -122,6 +127,32 @@ table {
   color: #fff;
 }
 
+/* line 1, ../scss/components/_modal.scss */
+.modal {
+  display: none;
+  min-width: 0;
+  height: 100vh;
+  background: #700D1F;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 600px) {
+  /* line 15, ../scss/components/_modal.scss */
+  .modal {
+    width: 600px;
+    height: 90vh;
+    min-width: 600px;
+    top: 5vh;
+  }
+}
 /* line 1, ../scss/components/_hero.scss */
 .hero {
   height: 100vh;
