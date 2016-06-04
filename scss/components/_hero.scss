@@ -1,28 +1,28 @@
-.hero {
-	height: 100vh;
-	background-image: url($images +'/hills.jpg');
-	background-size: cover;
-	background-position: center;
-	.hero-cont {
-		height: 100%;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7e7e2+0,133131+100 */
-		background: rgb(199,231,226); /* Old browsers */
-		background: -webkit-linear-gradient(185deg,  rgba(199,231,226,0.01) 20%,rgba(19,49,49,0.99) 70%,rgba(19,49,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(185deg,  rgba(199,231,226,0.01) 20%,rgba(19,49,49,0.99) 70%,rgba(19,49,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	}
+.hero-cont {
+//
 }
 
 .cta {
-	font-size: 120px;
-	font-family: $serif;
+	//layout
+	width: 640px;
+	max-width: 100%;
+	padding: 35vh 0 0;
+	//text
+	font-size: 30px;
+	font-family: $sans-serif;
 	font-weight: bold;
+	text-shadow: 1px 1px $dark-green;
+	//color
 	color: $light-grey;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 100%;
+	h1 {
+		font-size: 18px;
+	}
 	h2 {
+		font-size: 22px;
+		margin: 24px 0;
+		border-bottom: 3px solid $red;
+		border-radius: 3px;
+		padding: 6px 0;
 		& span {
 			color: $burgundy;
 		}
@@ -31,6 +31,29 @@
 		}
 		&:last-child {
 			margin-left: 1em;
+		}
+	}
+	a.shopify {
+		color: $shopify-green;
+		text-decoration: none;
+	} 
+	p{
+		font-size: 16px;
+		a {
+			color: $red;
+			text-shadow: none;
+		}
+	}
+}
+
+@media (min-width: $media-desk) {
+	.cta {
+		padding-top: 45vh;
+		h1 {
+			font-size: 24px;
+		}
+		h2 {
+			font-size: 36px;
 		}
 	}
 }

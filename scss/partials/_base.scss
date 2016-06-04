@@ -1,19 +1,18 @@
 .wrapper {
 	position: relative;
+	height: 100vh;
+	background-image: url($images +'/canal-colour.jpg');
+	background-size: cover;
+	background-position: center;
+	.wrapper-cont {
+		height: 100%;
+		background: -webkit-linear-gradient(to top, rgba($mid-green, 0.55) , rgba(#FFE47A,0.3)); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to top, rgba($mid-green, 0.55) , rgba(#FFE47A,0.3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-}
-.spacer {
-	height: 200px;
-}
-.services-to-about {
-	background: -webkit-linear-gradient(270deg,  $dark-green 10%,$mid-green 90%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(180deg,  $dark-green 10%, $mid-green 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-.about-to-contact {
-	background: -webkit-linear-gradient(270deg,  $burgundy 10%,$deep-purple 90%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(180deg,  $burgundy 10%, $deep-purple 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	padding: 0 20px;
 }

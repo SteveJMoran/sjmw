@@ -64,33 +64,25 @@ table {
 /* line 1, ../scss/partials/_base.scss */
 .wrapper {
   position: relative;
+  height: 100vh;
+  background-image: url("../images/canal-colour.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* line 7, ../scss/partials/_base.scss */
+.wrapper .wrapper-cont {
+  height: 100%;
+  background: -webkit-linear-gradient(to top, rgba(107, 142, 120, 0.55), rgba(255, 228, 122, 0.3));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgba(107, 142, 120, 0.55), rgba(255, 228, 122, 0.3));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* line 5, ../scss/partials/_base.scss */
+/* line 14, ../scss/partials/_base.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* line 9, ../scss/partials/_base.scss */
-.spacer {
-  height: 200px;
-}
-
-/* line 12, ../scss/partials/_base.scss */
-.services-to-about {
-  background: -webkit-linear-gradient(270deg, #133131 10%, #254949 90%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(180deg, #133131 10%, #254949 90%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-/* line 16, ../scss/partials/_base.scss */
-.about-to-contact {
-  background: -webkit-linear-gradient(270deg, #700D1F 10%, #220B13 90%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(180deg, #700D1F 10%, #220B13 90%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 0 20px;
 }
 
 /* line 2, ../scss/partials/_grid.scss */
@@ -103,6 +95,28 @@ table {
 .header {
   position: absolute;
   width: 100%;
+  padding: 24px 0;
+}
+
+/* line 6, ../scss/components/_header.scss */
+.logo {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #D0DCD2;
+  border: 3px solid #D0DCD2;
+  font-size: 24px;
+  padding: 0 2px;
+  line-height: 0.83em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+/* line 15, ../scss/components/_header.scss */
+.logo .dig {
+  font-weight: bold;
+}
+/* line 18, ../scss/components/_header.scss */
+.logo:hover, .logo:active {
+  color: #FEF8F8;
+  border-color: #FEF8F8;
 }
 
 /* line 1, ../scss/components/_navigation.scss */
@@ -144,7 +158,7 @@ table {
   right: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 660px) {
   /* line 15, ../scss/components/_modal.scss */
   .modal {
     width: 600px;
@@ -153,36 +167,28 @@ table {
     top: 5vh;
   }
 }
-/* line 1, ../scss/components/_hero.scss */
-.hero {
-  height: 100vh;
-  background-image: url("../images/hills.jpg");
-  background-size: cover;
-  background-position: center;
-}
-/* line 6, ../scss/components/_hero.scss */
-.hero .hero-cont {
-  height: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7e7e2+0,133131+100 */
-  background: #c7e7e2;
-  /* Old browsers */
-  background: -webkit-linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, rgba(19, 49, 49, 0.99) 70%, #133131 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(185deg, rgba(199, 231, 226, 0.01) 20%, rgba(19, 49, 49, 0.99) 70%, #133131 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-/* line 15, ../scss/components/_hero.scss */
+/* line 5, ../scss/components/_hero.scss */
 .cta {
-  font-size: 120px;
-  font-family: "Alegreya", serif;
+  width: 640px;
+  max-width: 100%;
+  padding: 35vh 0 0;
+  font-size: 30px;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
+  text-shadow: 1px 1px #133131;
   color: #FEF8F8;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
+}
+/* line 17, ../scss/components/_hero.scss */
+.cta h1 {
+  font-size: 18px;
+}
+/* line 20, ../scss/components/_hero.scss */
+.cta h2 {
+  font-size: 22px;
+  margin: 24px 0;
+  border-bottom: 3px solid #ff4342;
+  border-radius: 3px;
+  padding: 6px 0;
 }
 /* line 26, ../scss/components/_hero.scss */
 .cta h2 span {
@@ -196,11 +202,39 @@ table {
 .cta h2:last-child {
   margin-left: 1em;
 }
+/* line 36, ../scss/components/_hero.scss */
+.cta a.shopify {
+  color: #7ab55c;
+  text-decoration: none;
+}
+/* line 40, ../scss/components/_hero.scss */
+.cta p {
+  font-size: 16px;
+}
+/* line 42, ../scss/components/_hero.scss */
+.cta p a {
+  color: #ff4342;
+  text-shadow: none;
+}
 
+@media (min-width: 660px) {
+  /* line 50, ../scss/components/_hero.scss */
+  .cta {
+    padding-top: 45vh;
+  }
+  /* line 52, ../scss/components/_hero.scss */
+  .cta h1 {
+    font-size: 24px;
+  }
+  /* line 55, ../scss/components/_hero.scss */
+  .cta h2 {
+    font-size: 36px;
+  }
+}
 /* line 1, ../scss/components/_about.scss */
 .about {
   height: 100vh;
-  background-color: #254949;
+  background-color: #6b8e78;
 }
 
 /* line 1, ../scss/components/_services.scss */
@@ -216,12 +250,33 @@ table {
 
 /* line 1, ../scss/components/_footer.scss */
 .footer {
-  background-color: #220B13;
-  color: #FEF8F8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   padding: 20px;
+  color: #FEF8F8;
 }
-/* line 5, ../scss/components/_footer.scss */
+/* line 8, ../scss/components/_footer.scss */
 .footer .copyright {
   text-align: center;
   max-width: 1200px;
+}
+/* line 12, ../scss/components/_footer.scss */
+.footer a {
+  margin: 2px;
+  padding: 0 10px;
+  color: #D0DCD2;
+  font-family: "Alegreya Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1em;
+}
+/* line 20, ../scss/components/_footer.scss */
+.footer a:first-child {
+  border-right: 1px solid #D0DCD2;
+}
+/* line 23, ../scss/components/_footer.scss */
+.footer a:last-child {
+  border-left: 1px solid #D0DCD2;
 }
