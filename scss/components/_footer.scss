@@ -9,7 +9,8 @@
 		text-align: center;
 		max-width: 1200px;
 	}
-	a {
+	a, span {
+		cursor: pointer;
 		margin: 2px;
 		padding: 0 10px;
 		color: $green-grey;

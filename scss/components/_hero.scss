@@ -28,9 +28,11 @@
 	} 
 	p{
 		font-size: 16px;
-		a {
+		a, span {
 			color: $red;
 			text-shadow: none;
+			cursor: pointer;
+			text-decoration: underline;
 		}
 	}
 

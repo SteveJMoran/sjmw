@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('.contact-form').on('click', function(){
+		console.log('open: modal')
 		$('.modal-cont').fadeIn(200);
 	});
 
