@@ -9,9 +9,10 @@
 		text-align: center;
 		max-width: 1200px;
 	}
-	a {
+	a, span {
 		margin: 2px;
 		padding: 0 10px;
+		cursor: pointer;
 		color: $green-grey;
 		font-family: $sans-serif;
 		text-decoration: none;

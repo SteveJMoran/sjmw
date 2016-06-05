@@ -14,23 +14,14 @@
 	text-shadow: 1px 1px $dark-green;
 	//color
 	color: $light-grey;
-	h1 {
-		font-size: 18px;
-	}
 	h2 {
-		font-size: 22px;
+		font-size: 26px;
 		margin: 24px 0;
 		border-bottom: 3px solid $red;
 		border-radius: 3px;
 		padding: 6px 0;
 		& span {
 			color: $burgundy;
-		}
-		&:first-child {
-			margin-left: -1em;
-		}
-		&:last-child {
-			margin-left: 1em;
 		}
 	}
 	a.shopify {
@@ -39,16 +30,18 @@
 	} 
 	p{
 		font-size: 16px;
-		a {
+		a, span {
 			color: $red;
 			text-shadow: none;
+			cursor: pointer;
+			text-decoration: underline
 		}
 	}
 }
 
 @media (min-width: $media-desk) {
 	.cta {
-		padding-top: 45vh;
+		padding-top: 50vh;
 		h1 {
 			font-size: 24px;
 		}

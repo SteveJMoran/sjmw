@@ -1,13 +1,14 @@
 .wrapper {
 	position: relative;
 	height: 100vh;
-	background-image: url($images +'/canal-colour.jpg');
+	//background-image: url($images +'/canal-colour.jpg');
 	background-size: cover;
 	background-position: center;
+	background-color:#71af4e;
 	.wrapper-cont {
 		height: 100%;
-		background: -webkit-linear-gradient(to top, rgba($mid-green, 0.35) , rgba(#FFE47A,0.3)); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to top, rgba($mid-green, 0.35) , rgba(#FFE47A,0.3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		//background: -webkit-linear-gradient(to top, rgba($mid-green, 0.25) , rgba(#FFE47A,0.3)); /* Chrome 10-25, Safari 5.1-6 */
+		//background: linear-gradient(to top, rgba($mid-green, 0.25) , rgba(#FFE47A,0.3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
 }
 
