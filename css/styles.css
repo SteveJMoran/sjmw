@@ -142,11 +142,10 @@ table {
 
 /* line 1, ../scss/components/_modal.scss */
 .modal {
-  display: none;
   min-width: 0;
   height: 100vh;
   background: #700D1F;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   margin: auto;
@@ -157,8 +156,17 @@ table {
   right: 0;
 }
 
+/* line 13, ../scss/components/_modal.scss */
+.modal-cont {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 @media (min-width: 830px) {
-  /* line 15, ../scss/components/_modal.scss */
+  /* line 21, ../scss/components/_modal.scss */
   .modal {
     width: 600px;
     height: 90vh;
@@ -201,11 +209,13 @@ table {
   font-size: 16px;
 }
 /* line 31, ../scss/components/_hero.scss */
-.cta p a {
+.cta p a, .cta p span {
   color: #ff4342;
   text-shadow: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
-/* line 37, ../scss/components/_hero.scss */
+/* line 39, ../scss/components/_hero.scss */
 .cta .cta-container {
   width: 100%;
   margin: 0 auto;
@@ -213,7 +223,7 @@ table {
   padding-left: 40px;
   padding-right: 20px;
 }
-/* line 43, ../scss/components/_hero.scss */
+/* line 45, ../scss/components/_hero.scss */
 .cta .cta-container:before {
   content: '';
   background-image: url("../images/lamp.svg");
@@ -225,7 +235,7 @@ table {
   left: 10px;
   top: 0;
 }
-/* line 55, ../scss/components/_hero.scss */
+/* line 57, ../scss/components/_hero.scss */
 .cta .cta-container:after {
   background-image: url("../images/lamp.svg");
   background-repeat: no-repeat;
@@ -238,27 +248,27 @@ table {
 }
 
 @media (min-width: 830px) {
-  /* line 71, ../scss/components/_hero.scss */
+  /* line 73, ../scss/components/_hero.scss */
   .cta h1 {
     font-size: 24px;
   }
-  /* line 74, ../scss/components/_hero.scss */
+  /* line 76, ../scss/components/_hero.scss */
   .cta h2 {
     font-size: 36px;
   }
-  /* line 77, ../scss/components/_hero.scss */
+  /* line 79, ../scss/components/_hero.scss */
   .cta .cta-container {
     width: 740px;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 81, ../scss/components/_hero.scss */
+  /* line 83, ../scss/components/_hero.scss */
   .cta .cta-container:before {
     left: -40px;
     top: -10px;
     bottom: -20px;
   }
-  /* line 86, ../scss/components/_hero.scss */
+  /* line 88, ../scss/components/_hero.scss */
   .cta .cta-container:after {
     content: '';
     top: -10px;
@@ -297,7 +307,8 @@ table {
   max-width: 1200px;
 }
 /* line 12, ../scss/components/_footer.scss */
-.footer a {
+.footer a, .footer span {
+  cursor: pointer;
   margin: 2px;
   padding: 0 10px;
   color: #D0DCD2;
@@ -306,11 +317,11 @@ table {
   display: inline-block;
   line-height: 1em;
 }
-/* line 20, ../scss/components/_footer.scss */
-.footer a:first-child {
+/* line 21, ../scss/components/_footer.scss */
+.footer a:first-child, .footer span:first-child {
   border-right: 1px solid #D0DCD2;
 }
-/* line 23, ../scss/components/_footer.scss */
-.footer a:last-child {
+/* line 24, ../scss/components/_footer.scss */
+.footer a:last-child, .footer span:last-child {
   border-left: 1px solid #D0DCD2;
 }
