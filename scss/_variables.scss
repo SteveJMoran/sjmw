@@ -1,3 +1,4 @@
+@import 'libs/fontawesome/font-awesome';
 
 //Colours
 $dark-green: #133131;
@@ -15,25 +16,15 @@ $shopify-green : #7ab55c;
 
 //greys
 $light-grey : #FEF8F8;
-//$light-grey : #000;
 $green-grey : #D0DCD2;
-
-
-
 
 //paths
 $images : '../images';
+$fa-font-path:   "../font";
 
 
 //fonts
-$sans-serif: 'Helvetica', Arial, sans-serif;
-//$serif : 'Ranga', cursive;
-$serif : 'Alegreya', serif;
-$sc-serif : 'Alegreya SC', serif;
-$sans-serif : 'Alegreya Sans', sans-serif;
-$sc-sans-serif : 'Alegreya Sans SC', sans-serif;
-
+$sans-serif: 'Open Sans', sans-serif;
 
 //breakpoints
-
 $media-desk : 830px;

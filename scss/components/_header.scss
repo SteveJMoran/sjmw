@@ -3,19 +3,34 @@
     padding: 24px 0;
 }
 .logo {
-	font-family: $sc-sans-serif;
+	font-family: $sans-serif;
 	color: $green-grey;
 	border: 3px solid $green-grey;
-    font-size: 24px;
+    border-left: none;
+    border-right: none;
+    font-size: 23px;
     padding: 0 2px;
     line-height: 0.83em;
     display: inline-block;
     text-transform: uppercase;
     .dig {
-    	font-weight: bold;
+    	font-weight: 300;
     }
     &:hover, &:active {
         color: $light-grey;
         border-color: $light-grey;
+    }
+}
+.shopify-link {
+    display: inline-block;
+    float: right;
+    color: $green-grey;
+    text-decoration: none;
+    font-family: $sans-serif;
+    .fa-shopping-bag {
+        padding-right: 6px;
+    }
+    &:hover, &:active {
+        color: $light-grey;
     }
 }
