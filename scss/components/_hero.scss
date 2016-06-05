@@ -1,37 +1,26 @@
-.hero-cont {
-//
-}
-
 .cta {
 	//layout
-	width: 640px;
+	width: 100%;
 	max-width: 100%;
-	padding: 35vh 0 0;
+	padding: 40px 0;
+	position: relative;
+	margin-top: 30vh;
 	//text
 	font-size: 30px;
 	font-family: $sans-serif;
 	font-weight: bold;
-	text-shadow: 1px 1px $dark-green;
 	//color
 	color: $light-grey;
+	background: rgba(#000,0.6);
 	h1 {
 		font-size: 18px;
 	}
 	h2 {
-		font-size: 22px;
-		margin: 24px 0;
+		font-size: 28px;
+		margin-bottom: 20px;
 		border-bottom: 3px solid $red;
 		border-radius: 3px;
 		padding: 6px 0;
-		& span {
-			color: $burgundy;
-		}
-		&:first-child {
-			margin-left: -1em;
-		}
-		&:last-child {
-			margin-left: 1em;
-		}
 	}
 	a.shopify {
 		color: $shopify-green;
@@ -44,16 +33,61 @@
 			text-shadow: none;
 		}
 	}
-}
 
+	.cta-container{
+		width:100%;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 40px;
+		padding-right: 20px;
+		&:before {
+			content:'';
+			background-image: url($images +'/lamp.svg');
+			background-repeat: no-repeat;
+			position: absolute;
+			min-height: 100%;
+			width: 30px;
+			background-size: contain;
+			left: 10px;
+			top: 0;
+
+		}
+		&:after {
+			
+			background-image: url($images +'/lamp.svg');
+			background-repeat: no-repeat;
+			position: absolute;
+			min-height: 100%;
+			width: 30px;
+			background-size: contain;
+			right: -40px;
+			top: -10px;
+		}
+	}
+
+}
 @media (min-width: $media-desk) {
 	.cta {
-		padding-top: 45vh;
 		h1 {
 			font-size: 24px;
 		}
 		h2 {
 			font-size: 36px;
+		}
+		.cta-container{
+			width: 740px;
+			padding-left: 0;
+			padding-right: 0;
+			&:before {
+				left: -40px;
+				top: -10px;
+				bottom: -20px;
+			}
+			&:after {
+				content:'';
+				top: -10px;
+				bottom: -20px;
+			}
 		}
 	}
 }
