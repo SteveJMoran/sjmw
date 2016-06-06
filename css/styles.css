@@ -3842,11 +3842,3 @@ table {
   display: inline-block;
   line-height: 1em;
 }
-/* line 22, ../scss/components/_footer.scss */
-.footer a:first-child, .footer span:first-child {
-  border-right: 1px solid #D0DCD2;
-}
-/* line 25, ../scss/components/_footer.scss */
-.footer a:last-child, .footer span:last-child {
-  border-left: 1px solid #D0DCD2;
-}

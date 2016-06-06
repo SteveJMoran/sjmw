@@ -20,10 +20,11 @@
 		display: inline-block;
 		line-height: 1em;
 		&:first-child {
-			border-right: 1px solid $green-grey;
+			//border-right: 1px solid $green-grey;
 		}
 		&:last-child {
-			border-left: 1px solid $green-grey;
+			//border-left: 1px solid $green-grey;
+			
 		}
 	}
 }
