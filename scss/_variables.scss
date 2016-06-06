@@ -1,6 +1,10 @@
 @import 'libs/fontawesome/font-awesome';
 
 //Colours
+$shopify-green : #7ab55c;
+$red : #ff4342;
+
+
 $dark-green: #133131;
 $mid-green: #254949;
 $turqoise: #C7E7E2;
@@ -10,9 +14,9 @@ $deep-purple: #220B13;
 $light-green : #68a78a;
 $mid-green : #6b8e78;
 $dark-bluegreen : #06373e;
-$red : #ff4342;
 
-$shopify-green : #7ab55c;
+
+
 
 //greys
 $light-grey : #FEF8F8;
@@ -25,6 +29,10 @@ $fa-font-path:   "../font";
 
 //fonts
 $sans-serif: 'Open Sans', sans-serif;
+
+//box-shadow
+
+$box-shadow :  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 //breakpoints
 $media-desk : 830px;

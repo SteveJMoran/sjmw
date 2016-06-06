@@ -1,14 +1,24 @@
 .modal {
+	position: absolute;
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0;
+  	right: 0;
+  	height: 100vh;
 	min-width: 0;
-	height: 100vh;
-    background: $light-grey;
-    position: relative;
-    width: 100%;
-    top: 0;
-    margin: auto;
-  	position: absolute;
-  	top: 0; left: 0; bottom: 0; right: 0;
-
+	width: 100%;
+	margin: auto;
+	background: $light-grey;
+	border-radius: 6px;
+	box-shadow: $box-shadow;
+	font-family: $sans-serif;
+	.close-modal {
+		color: $red;
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+		padding: 6px 8px;
+	}
 }
 .modal-cont {
 	position: absolute;
@@ -22,6 +32,5 @@
 		width: 600px;
 		height: 90vh;
 		min-width: 600px;
-	    top: 5vh;
 	}
 }
